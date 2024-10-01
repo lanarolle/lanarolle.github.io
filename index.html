@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Roboto:ital@1&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Add your custom font names here
+                        'Fontro': ['"Gowun Batang"', 'serif'],
+                        'Fontroi': ['"Roboto Italic"', 'sans-serif'],
+                    },
+                    colors: {
+
+                        bl: '#5E3BEE', /*blue*/
+                        hc: '#282938', /*Heding color black*/
+                        shde: '#F5FCFF', /*Shade white*/
+                        pik: '#E62872', /*Pink*/
+                        dakbl: '#1C1E53', /*DArk Blue*/
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <p class="font-Fontro text-bl">
+        This text will be in your custom font.
+    </p>
+    <p class="font-Fontroi text-hc">
+        This text will be in your custom font.
+    </p>
+    <p class="font-Fontro text-pik">
+        This text will be in your custom font.
+    </p>
+    <p class="font-Fontro color-pik">
+        This text will be in your custom font.
+    </p>
+    <p class="font-Fontro color-dakbl">
+        This text will be in your custom font.
+    </p>
+
+</body>
+
+</html>
