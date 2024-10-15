@@ -11,13 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        // Add your custom font names here
+
                         'Fontro': ['"Gowun Batang"', 'serif'],
                         'Fontroi': ['"Roboto Italic"', 'sans-serif'],
                     },
@@ -28,6 +32,7 @@
                         shde: '#F5FCFF', /*Shade white*/
                         pik: '#E62872', /*Pink*/
                         dakbl: '#1C1E53', /*DArk Blue*/
+                        
                     }
                 }
             }
@@ -37,21 +42,61 @@
 
 <body>
 
-    <p class="font-Fontro text-bl">
-        This text will be in your custom font.
-    </p>
-    <p class="font-Fontroi text-hc">
-        This text will be in your custom font.
-    </p>
-    <p class="font-Fontro text-pik">
-        This text will be in your custom font.
-    </p>
-    <p class="font-Fontro color-pik">
-        This text will be in your custom font.
-    </p>
-    <p class="font-Fontro color-dakbl">
-        This text will be in your custom font.
-    </p>
+
+    <header class=" text-hc shadow-lg color-shde">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 hidden md:flex">
+            <!-- Logo -->
+            <div class=" ">
+                <img class="h-5 w-20  " src="images/logo2.png" alt="">
+            </div>
+
+            <div class="ontainer mx-auto flex justify-center items-center ">
+                <nav class="flex space-x-8  ">
+                    <a href="#" class="hover:text-bl">Home</a>
+                    <a href="#" class="hover:text-bl">Portfolio</a>
+                    <a href="#" class="hover:text-bl">About me</a>
+                    <a href="#" class="hover:text-bl">Testimonils</a>
+                </nav>
+            </div>
+
+            <button class="border-solid border-2 border-bl color-b1 p-3 rounded-xl ">Contact me</button>
+
+
+        </div>
+
+
+        <!-- only for mobile device -->
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 flex md:hidden">
+            <!-- Logo -->
+            <div class=" ">
+                <img class="h-10 w-10" src="images/logo.png" alt="">
+            </div>
+
+            menu
+        </div>
+
+
+    </header>
+
+    <section class="bg-shde py-12 ">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center px-4">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <p class=" font-Fontroi text-xl text-hc " >Hey, I am John</p>
+                <h1 class="text-7xl font-Fontroi text-hc">I create <span class="text-purple-600">product
+                        design</span> and brand experience</h1>
+                <p class="mt-4  text-2xl text-dakbl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Suspendisse
+                    varius enim in eros elementum tristique.</p>
+                <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">Get In
+                    Touch</button>
+            </div>
+            <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+                <img  src="images/tumb.png" alt="Profile Image" class="rounded-lg shadow-lg w-917px h-729px">
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
 
 </body>
 
