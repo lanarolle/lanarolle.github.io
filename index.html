@@ -2,101 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Roboto:ital@1&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Roboto:ital@1&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
 
-                        'Fontro': ['"Gowun Batang"', 'serif'],
-                        'Fontroi': ['"Roboto Italic"', 'sans-serif'],
-                    },
-                    colors: {
+            'Fontro': ['"Gowun Batang"', 'serif'],
+            'Fontroi': ['"Roboto Italic"', 'sans-serif'],
+          },
+          colors: {
 
-                        bl: '#5E3BEE', /*blue*/
-                        hc: '#282938', /*Heding color black*/
-                        shde: '#F5FCFF', /*Shade white*/
-                        pik: '#E62872', /*Pink*/
-                        dakbl: '#1C1E53', /*DArk Blue*/
-                        
-                    }
-                }
-            }
+            bl: '#5E3BEE', /*blue*/
+            hc: '#282938', /*Heding color black*/
+            shde: '#F5FCFF', /*Shade white*/
+            pik: '#E62872', /*Pink*/
+            dakbl: '#1C1E53', /*DArk Blue*/
+
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
 <body>
 
 
-    <header class=" text-hc shadow-lg color-shde">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6 hidden md:flex">
-            <!-- Logo -->
-            <div class=" ">
-                <img class="h-5 w-20  " src="images/logo2.png" alt="">
-            </div>
+  <header class=" text-hc shadow-lg color-shde">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6 hidden md:flex">
+      <!-- Logo -->
+      <div class=" ">
+        <img class="h-5 w-20  " src="images/logo2.png" alt="">
+      </div>
 
-            <div class="ontainer mx-auto flex justify-center items-center ">
-                <nav class="flex space-x-8  ">
-                    <a href="#" class="hover:text-bl">Home</a>
-                    <a href="#" class="hover:text-bl">Portfolio</a>
-                    <a href="#" class="hover:text-bl">About me</a>
-                    <a href="#" class="hover:text-bl">Testimonils</a>
-                </nav>
-            </div>
+      <div class="ontainer mx-auto flex justify-center items-center ">
+        <nav class="flex space-x-8  ">
+          <a href="#" class="hover:text-bl">Home</a>
+          <a href="#" class="hover:text-bl">Portfolio</a>
+          <a href="#" class="hover:text-bl">About me</a>
+          <a href="#" class="hover:text-bl">Testimonils</a>
+        </nav>
+      </div>
 
-            <button class="border-solid border-2 border-bl color-b1 p-3 rounded-xl ">Contact me</button>
+      <button class="border-solid border-2 border-bl color-b1 p-3 rounded-xl ">Contact me</button>
 
 
+    </div>
+
+
+    <!-- only for mobile device -->
+    <div class="container mx-auto flex justify-between items-center py-4 px-6 flex md:hidden">
+      <!-- Logo -->
+      <div class=" ">
+        <img class="h-10 w-10" src="images/logo.png" alt="">
+      </div>
+
+      menu
+    </div>
+
+
+  </header>
+
+  <section class="bg-shde py-12 ">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center px-4">
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <p class=" font-Fontroi text-xl text-hc ">Hey, I am John</p>
+        <h1 class="text-7xl font-Fontroi text-hc">I create <span class="text-purple-600">product
+            design</span> and brand experience</h1>
+        <p class="mt-4  text-2xl text-dakbl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+          Suspendisse
+          varius enim in eros elementum tristique.</p>
+        <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">Get In
+          Touch</button>
+      </div>
+      <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+        <img src="images/tumb.png" alt="Profile Image" class="rounded-lg shadow-lg w-917px h-729px">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="text-left mb-20">
+        <h2 class="text-lg font-Fontroi text-gray-600">My Skills</h2>
+        <h1 class="text-4xl font-bold text-gray-800">My Expertise</h1>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="bg-shde p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="images/1.jpg" alt="Strategy Icon" class="h-12 w-12 shadow-2xl ">
+          </div>
+          <h3 class="text-xl font-bold mb-4">Strategy & Direction</h3>
+          <p class="text-hc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique.</p>
+        </div>
+
+        <div class="bg-shde p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="images/2.jpg" alt="Branding Icon" class="h-12 w-12 shadow-2xl ">
+          </div>
+          <h3 class="text-xl font-bold mb-4">Branding & Logo</h3>
+          <p class="text-hc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique.</p>
         </div>
 
 
-        <!-- only for mobile device -->
-        <div class="container mx-auto flex justify-between items-center py-4 px-6 flex md:hidden">
-            <!-- Logo -->
-            <div class=" ">
-                <img class="h-10 w-10" src="images/logo.png" alt="">
-            </div>
-
-            menu
+        <div class="bg-shde p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="images/3.jpg" alt="UI UX Icon" class="h-12 w-12 shadow-2xl ">
+          </div>
+          <h3 class="text-xl font-bold mb-4">UI & UX Design</h3>
+          <p class="text-hc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique.</p>
         </div>
 
 
-    </header>
-
-    <section class="bg-shde py-12 ">
-        <div class="container mx-auto flex flex-col lg:flex-row items-center px-4">
-            <div class="lg:w-1/2 text-center lg:text-left">
-                <p class=" font-Fontroi text-xl text-hc " >Hey, I am John</p>
-                <h1 class="text-7xl font-Fontroi text-hc">I create <span class="text-purple-600">product
-                        design</span> and brand experience</h1>
-                <p class="mt-4  text-2xl text-dakbl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Suspendisse
-                    varius enim in eros elementum tristique.</p>
-                <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">Get In
-                    Touch</button>
-            </div>
-            <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-                <img  src="images/tumb.png" alt="Profile Image" class="rounded-lg shadow-lg w-917px h-729px">
-            </div>
+        <div class="bg-shde p-6 rounded-lg shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="images/4.jpg" alt="Webflow Icon" class="h-12 w-12 shadow-2xl ">
+          </div>
+          <h3 class="text-xl font-bold mb-4">Webflow Development</h3>
+          <p class="text-hc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+            elementum tristique.</p>
         </div>
-    </section>
-    <footer>
+      </div>
+    </div>
+  </section>
+  <footer>
 
-    </footer>
+  </footer>
 
 </body>
 
