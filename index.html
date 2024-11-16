@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="!scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -43,16 +43,16 @@
     </script>
 </head>
 
-<body>
+<body  >
 
 
 
-    <nav class="bg-white border-gray-200 ">
+    <nav class=" scroll-smooth bg-white border-gray-200 fixed top-0 w-full z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="images/logo-no-background.png" class="h-8" alt=" Logo" />
-
+                <img src="images/logo-no-background.png" class="h-8" alt="Logo" />
             </a>
+            
             <!-- Navbar Toggle Button -->
             <button id="nav-toggle" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
@@ -63,70 +63,48 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-
+    
             <!-- Mobile Overlay and Navbar Menu -->
-            <div id="mobile-overlay" class="fixed inset-0  bg-black bg-opacity-50 hidden md:hidden z-20">
-                <div id="navbar-default" class="ab   w-full max-w-sm mx-auto bg-white rounded-lg shadow-md">
-                    <ul class=" md:top-40 font-medium flex flex-col p-4 space-y-4">
+            <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden md:hidden z-20">
+                <div id="navbar-default" class="ab w-full max-w-sm mx-auto bg-white rounded-lg shadow-md">
+                    <ul class="md:top-40 font-medium flex flex-col p-4 space-y-4">
                         <li><a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded">Home</a></li>
-                        <li><a href="#Portfolio"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">Portfolio</a></li>
-                        <li><a href="#aboutme" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">About
-                                me</a></li>
-                        <li><a href="#Testimonial"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">Testimonials</a></li>
+                        <li><a href="#aboutme" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">About me</a></li>
+                        <li><a href="#Portfolio" class="  block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">Portfolio</a></li>
+                        
+                        <li><a href="#Testimonial" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">Testimonials</a></li>
                     </ul>
                 </div>
             </div>
-
-            <!-- <button id="nav-toggle" data-collapse-toggle="navbar-default" type="button"
-        class="  inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button> -->
+    
+            <!-- Desktop Navbar Menu -->
             <div class="hidden ab w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
-                            aria-current="page">Home</a>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#Portfolio"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Portfolio</a>
+                        <a href="#aboutme" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About me</a>
                     </li>
                     <li>
-                        <a href="#aboutme"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">About
-                            me</a>
+                        <a href="#Portfolio" class="  block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Portfolio</a>
                     </li>
+                    
                     <li>
-                        <a href="#Testimonial"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Testimonils</a>
+                        <a href="#Testimonial" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Testimonials</a>
                     </li>
-
                 </ul>
-
-
-
             </div>
+    
+            <!-- Contact Button -->
             <div class="hidden md:block">
                 <a href="https://wa.me/94714298100">
                     <button class="block border-solid border-2 border-bl color-b1 p-3 rounded-xl">Contact me</button>
                 </a>
             </div>
-
-
-
-
-
-
+        </div>
     </nav>
+    
 
 
 
@@ -457,24 +435,22 @@
     <section id="Contact" class="bg-shde flex items-center justify-center min-h-screen">
 
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-5xl">
-            <!-- <h1 class="text-center text-3xl font-bold mb-4">Contact me</h1>
-      <p class="text-center text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-
+           
             <div class="text-center mb-10">
                 <h2 class="text-lg font-Fontroi text-gray-600">Get in Touch</h2>
                 <h1 class="text-4xl font-bold text-gray-800">Contact me</h1>
             </div>
-            <form>
+            <form id="contactForm" action="https://script.google.com/macros/s/AKfycbwSewGL6zwj1O_Mu1vd7IZwjJglls_JxtYG_gHYnMdVzsMim4goqe4BgENRSGbr5dNnHA/exec" >
                 <div class="flex space-x-3 mb-8">
                     <div class="w-1/2">
-                        <label for="first-name" class="block text-sm font-medium text-gray-700  ">First name</label>
-                        <input type="text" id="first-name"
+                        <label for="firstName" class="block text-sm font-medium text-gray-700  ">First name</label>
+                        <input type="text" id="firstName"
                             class="mt-1 block w-full border border-bl rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
                             placeholder="First name">
                     </div>
                     <div class="w-1/2">
-                        <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                        <input type="text" id="last-name"
+                        <label for="lastName" class="block text-sm font-medium text-gray-700">Last name</label>
+                        <input type="text" id="lastName"
                             class="mt-1 block w-full border border-bl rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
                             placeholder="Last name">
                     </div>
@@ -483,38 +459,20 @@
                 <div class="flex space-x-4 mb-8">
                     <div class="w-1/2">
                         <label for="email" class="block text-sm font-medium text-gray-700">email</label>
-                        <input type="email"
+                        <input type="email" id="email"
                             class="mt-1 block w-full border border-bl rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
                             placeholder="email">
                     </div>
                     <div class="w-1/2">
                         <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
-                        <input type="text"
+                        <input type="text" id="phone"
                             class="mt-1 block w-full border border-bl rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
                             placeholder="Phone number">
                     </div>
                 </div>
 
-                <!-- <div class="mb-4">
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Email">
-        </div> -->
-                <!--   
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
-          <input type="tel" id="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Phone number">
-        </div> -->
 
-                <div class="mb-8">
-                    <label for="topic" class="block text-sm font-medium text-gray-700">Choose a topic</label>
-                    <select id="topic"
-                        class="mt-1 block w-full border border-bl rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                        <option>Select one...</option>
-                        <option>General Inquiry</option>
-                        <option>Support</option>
-                        <option>Feedback</option>
-                    </select>
-                </div>
+                
 
                 <div class="mb-8">
                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
