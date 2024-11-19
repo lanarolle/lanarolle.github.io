@@ -72,5 +72,19 @@ document.getElementById("contactForm").addEventListener("submit", async function
 });
 
 
+// Get the overlay and navbar elements
+//const mobileOverlay = document.getElementById("mobile-overlay");
+const navbarItems = document.querySelectorAll("#navbar-default li");
+
+// Add a click event to each <li> item
+navbarItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        // Hide the overlay
+        mobileOverlay.classList.add("hidden");
+    });
+});
+
+
+
 
 
