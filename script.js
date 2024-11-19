@@ -23,7 +23,7 @@ document.addEventListener('click', (event) => {
 // });
 
 function doPost(e) {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sheet1'); // Rename "Sheet1" if needed
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Contact Form Handler'); // Rename "Sheet1" if needed
   const data = JSON.parse(e.postData.contents);
 
   // Append the new row
@@ -53,7 +53,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   };
 
   try {
-    const response = await fetch("AKfycbyB5PCwZRFYc_Z2PWADZJ_99XfsQ0RkCaI5iyn-YW0", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbycttrkUXqaTh31MtUR08kTxY9YtL_vQxCQAlRjZjVc/dev", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" }
