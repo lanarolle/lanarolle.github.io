@@ -81,8 +81,35 @@ navbarItems.forEach((item) => {
     item.addEventListener("click", () => {
         // Hide the overlay
         mobileOverlay.classList.add("hidden");
-    });
+    }
+  );
 });
+
+
+
+
+// Get references to the elements
+//const mobileOverlay = document.getElementById('mobile-overlay');
+const navbarDefault = document.getElementById('navbar-default');
+
+// Function to close the mobile menu
+function closeNavbar() {
+    mobileOverlay.classList.add('hidden'); // Add the 'hidden' class to hide the overlay
+}
+
+// Add event listener to the overlay for closing
+mobileOverlay.addEventListener('click', (event) => {
+    // Close the navbar only if the user clicks outside the menu
+    if (event.target === mobileOverlay) {
+        closeNavbar();
+    }
+});
+
+// Optional: If you have a close button in your menu
+const closeButton = document.querySelector('#navbar-default .close-btn');
+if (closeButton) {
+    closeButton.addEventListener('click', closeNavbar);
+}
 
 
 
